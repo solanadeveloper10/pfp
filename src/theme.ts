@@ -21,8 +21,7 @@ export const theme = createTheme({
     divider: "#e0ddd4",
   },
   typography: {
-    fontFamily:
-      "'Pixelify Sans', 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif",
+    fontFamily: "beachday",
     h1: { fontSize: "3rem", fontWeight: 700 },
     h2: { fontSize: "2.5rem", fontWeight: 600 },
     h3: { fontSize: "2rem", fontWeight: 500 },
@@ -41,6 +40,15 @@ export const theme = createTheme({
           color: "rgb(39, 57, 0)",
         },
       },
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1636,
     },
   },
 });

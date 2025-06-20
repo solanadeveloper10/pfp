@@ -1,8 +1,4 @@
-import {
-  Button as MuiButton,
-  Typography,
-  type ButtonProps,
-} from "@mui/material";
+import { Button as MuiButton, type ButtonProps } from "@mui/material";
 import type { FC } from "react";
 
 const Button: FC<ButtonProps & { children: string }> = ({
@@ -24,29 +20,7 @@ const Button: FC<ButtonProps & { children: string }> = ({
         ...sx,
       }}
       {...rest}
-    >
-      <Typography
-        variant='body1'
-        component='span'
-        width='100%'
-        textAlign='center'
-        fontSize={18}
-        fontWeight={500}
-        sx={{
-          "&:before": {
-            content: '""',
-            width: "25%",
-            border: 2,
-            borderColor: "#fff",
-            position: "absolute",
-            top: 0,
-            left: 0,
-          },
-        }}
-      >
-        {children}
-      </Typography>
-    </MuiButton>
+    ></MuiButton>
   );
 };
 

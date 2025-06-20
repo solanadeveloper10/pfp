@@ -2,32 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/fav_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gochi - AI Pet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Pixelify+Sans:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      html,
-      body {
-        cursor: none !important;
-      }
-
-      #custom-cursor {
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-        width: 32px;
-        height: 32px;
-        transition: width, height 2s;
-      }
-    </style>
+    <title>PFP</title>
   </head>
+  <style>
+    @font-face {
+      font-family: "beachday";
+      src: url("Beachday.ttf");
+    }
+
+    body {
+      margin: 0;
+      background-image: url("/bg.png");
+      background-size: cover;
+      background-position: center;
+      font-family: beachday;
+    }
+  </style>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
